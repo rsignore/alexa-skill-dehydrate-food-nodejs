@@ -1,0 +1,22 @@
+{
+  "name": "alexa-skill-dehydrate-food-nodejs",
+  "version": "1.0.0",
+  "description": "Provides instructions on how to dehydrate fruits and vegetables",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsignore/alexa-skill-dehydrate-food-nodejs.git"
+  },
+  "keywords": [
+    "alexa",
+    "skill"
+  ],
+  "author": "Robert Signore",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "alexa-sdk": "^1.0.10"
+  }
+}
