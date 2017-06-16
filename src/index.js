@@ -258,7 +258,7 @@ var handlers = {
     },
     'AMAZON.NoIntent': function() {
 
-        var randomResponseText = noResponses[Math.floor(Math.random() * (noResponses.length - 1))];
+        var randomResponseText = noResponses[Math.round(Math.random() * (noResponses.length - 1))];
         this.emit(':tell', randomResponseText );
     },
     'AMAZON.StopIntent': function() {

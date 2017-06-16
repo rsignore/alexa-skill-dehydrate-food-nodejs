@@ -1,3 +1,12 @@
-HelloWorldIntent hello
-HelloWorldIntent say hello
-HelloWorldIntent say hello world
+FoodInstructions How do you dehydrate {food}
+FoodInstructions Tell me how to dehydrate {food}
+FoodInstructions how do you prepare {food}
+FoodInstructions how do I dehydrate {food}
+FoodInstructions how do I dehydrate a {food}
+FoodInstructions how do I dehydrate an {food}
+FoodInstructions how to dehydrate {food}
+FoodInstructions how to dehydrate a {food}
+FoodInstructions how to dehydrate an {food}
+FoodInstructions {food}
+FoodInstructions a {food}
+FoodInstructions an {food}
