@@ -1,28 +1,26 @@
 {
   "session": {
-    "sessionId": "SessionId.26a6f6a6-3b2f-40ec-b697-588109f97944",
+    "sessionId": "SessionId.157b9234-0b17-478b-b726-c9abbf32de4b",
     "application": {
       "applicationId": "amzn1.ask.skill.4d0bc0c4-2d64-415b-8373-02b143c10b28"
     },
-    "attributes": {},
+    "attributes": {
+      "STATE": "_ASKPRETREATMENT",
+      "foodIndexPretreatment": "0"
+    },
     "user": {
       "userId": "amzn1.ask.account.AGS2QD44PFCFEXWNCOSYMUVZM2D2DBW5YZ6XPMKQEJVSCT227EWQPUYFPVUZVBF6EAKPEO3O4US3WVPKGMOCYY47ACOJ35YTGT3ISMQUC4LLNHX5MMFIE72TT6DQ6IFKLJ5SROYM6R2XDJDD2R3DHPORINF2RFUAVVPTU6I7ZF2H2YSXXKMXCZ5BVVMEADXKXBMORKYDJ6CHAGY"
     },
-    "new": true
+    "new": false
   },
   "request": {
     "type": "IntentRequest",
-    "requestId": "EdwRequestId.6cd400b5-f903-478d-8b5c-d604b9b10323",
+    "requestId": "EdwRequestId.ca032d72-a855-472d-8df5-9a1e20194918",
     "locale": "en-US",
-    "timestamp": "2017-06-15T13:44:33Z",
+    "timestamp": "2017-06-16T16:19:18Z",
     "intent": {
-      "name": "FoodInstructions",
-      "slots": {
-        "food": {
-          "name": "food",
-          "value": "apples"
-        }
-      }
+      "name": "AMAZON.YesIntent",
+      "slots": {}
     }
   },
   "version": "1.0"

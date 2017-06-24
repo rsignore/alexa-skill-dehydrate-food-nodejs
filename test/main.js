@@ -71,13 +71,14 @@ sts.assumeRole({
 
         // uncomment one  event to test it
         //
+//       var event = require('./yes-withstate-input.json');
 //       var event = require('./yes-input.json');
 //       var event = require('./dehydrate-input.json');
 //       var event = require('./no-input.json');
 //       var event = require('./stop-input.json');
 //       var event = require('./help-input.json');
-       var event = require('./cancel-input.json');
-//       var event = require('./launch-input.json');
+//       var event = require('./cancel-input.json');
+       var event = require('./launch-input.json');
 //       var event = require('./input.json');
 
         lambda.handler(event, context());
