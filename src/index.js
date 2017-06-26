@@ -447,10 +447,12 @@ var nonStateHandlers = {
                 this.emit(':tell', 'Sorry, but I don\'t know how to dehydrate ' + foodToDehydrate.toString());
             }
         }
-        else { // response was not understood
+        else { // response was not understood, or there was no food given
+
+            var repromptText = 'What would you like to dehydrate?'
 
             console.log('FoodInstructions intent called without a food');
-            this.emit(':ask', 'Sorry, I didn\'t get that. ' + repromptText, repromptText);
+            this.emit(':ask', 'Sorry, I didn\'t get that. For example, you can ask, how do I dehydrate apples? ' + repromptText, repromptText);
         }
     },
     'AMAZON.NoIntent': function() {
@@ -480,7 +482,7 @@ var nonStateHandlers = {
         var repromptText = 'What food would you like to dehydrate?';
 
         this.handler.state = states.NONE;
-        console.log('Unhandled event, nostate: ' + this.event.request.intent.name);
+        console.log('Unhandled event, nostate: ' /*+ this.event.request.intent.name*/);
         this.emit(':ask','Sorry, I did not get that, ' + repromptText, repromptText);
     }
 };
@@ -491,12 +493,10 @@ var nonStateHandlers = {
 var askFoodHandlers = Alexa.CreateStateHandler(states.ASKFOOD, {
     'Unhandled': function() {
 
-        console.log('Unhandled event, ASKFOOD: ' + this.event.request.intent.name);
+        console.log('Unhandled event, ASKFOOD: ' /*+ this.event.request.intent.name*/);
     
-        // have the non-state handler handle the intent
+        // do nothing
         //
-        this.handler.state = states.NONE;
-        this.emitWithState(this.event.request.intent.name); 
     }
 });
 
@@ -559,11 +559,9 @@ var pretreatmentHandlers = Alexa.CreateStateHandler(states.ASKPRETREATMENT, {
     },
     'Unhandled': function() {
 
-        console.log('Unhandled event, ASKPRETREATMENT: ' + this.event.request.intent.name);
+        console.log('Unhandled event, ASKPRETREATMENT: ' /*+ this.event.request.intent.name*/);
 
-        // let the non-state handler try it
+        // do nothing?
         //
-        this.handler.state = states.NONE;
-        this.emitWithState(this.event.request.intent.name); 
     }
 });
